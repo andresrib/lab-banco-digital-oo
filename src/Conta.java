@@ -49,4 +49,8 @@ public abstract class Conta implements IConta {
 		System.out.println(String.format("Numero: %d", this.numero));
 		System.out.println(String.format("Saldo: %.2f", this.saldo));
 	}
+
+	protected void informarContaNegativa(){
+		System.out.println(String.format("A conta está negativa em: %.2f", this.saldo));
+	}
 }
